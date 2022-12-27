@@ -1,0 +1,185 @@
+:root {
+  --bg-color: linear-gradient(to bottom right, #000000, #472183, #C69749);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #EEEEEE;
+  background-color: #EEEEEE;
+}
+
+#navbar {
+  background-color: black;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: var(--bg-color)
+    /* background-color:#282A3A;   */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: #282A3A;
+  font-weight: bold;
+}
+
+li a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #C69749;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+a:hover {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 4em;
+  margin: 5px auto;
+  color: #C69749;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin: 0 auto;
+}
+
+.project-intro {
+  font-size: 2em;
+  color: #282A3A;
+  margin-top: 7.5rem;
+}
+
+.courses {
+  color: #C69749;
+  margin-bottom: 7.5rem;
+}
+
+.sites {
+  text-decoration: none;
+}
+
+.sites:hover {
+  color: #472183;
+  font-size: 1.2em;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 5rem;
+  width: 100%;
+  max-width: 1280px;
+  color: #EEEEEE;
+}
+
+.grid-item {
+  background-color: #C69749;
+  padding: 0px;
+  border-radius: 15px;
+}
+
+.project-image {
+  width: 100%;
+  height: calc(100% - 3.8rem);
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.project-title:hover {
+  color: #472183;
+  font-size: 1.2rem;
+  transition: 1s;
+}
+
+.button {
+  background-image: var(--bg-color);
+  border: none;
+  padding: 15px 32px;
+  border-radius: 15px;
+  width: 250px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4rem 2px;
+  cursor: pointer;
+}
+
+.btn-text {
+  color: white;
+}
+
+.contact-text {
+  color: #472183;
+  margin: 6rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.bf-foot {
+  width: 100%;
+  height: 10px;
+  border: 5px solid #C69749;
+  background-color: #C69749;
+  border-radius: 10px;
+}
+
+footer {
+  color: #C69749;
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
